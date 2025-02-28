@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="../static/css/swiper-bundle.min.css" />
+ 
+
+  <!-- Font Awesome ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- BOX ICONS -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../static/css/style.css" />
+
+  <!--Webpage Icon-->
+  <link rel="icon" type="image/png" href="../style/img/technologist_emoji.png" />
+
+  <meta name="description" content="Personal Pertfolio Website of Prince Olubari, to showcase my Projects" />
+  <meta name="keyword" content="portfolio, python, developer, resume, data" />
+  <meta name="robots" content="index" />
+
+  <title>Prince | Personal Portfolio</title>
+</head>
+
+<body>
+  <!-- Scroll Top -->
+  <a href="#" class="scrolltop" id="scroll-top" aria-label="Chevron-Up">
+    <i class="bx bx-chevron-up scrolltop__icon"></i>
+  </a>
+
+  <!-- Header -->
+  <header class="l-header" id="header">
+    <nav class="nav rd-container">
+      <a href="{{ url_for('home') }}" class="nav__logo" aria-label="My Name as Navigation Logo">Prince Olubari</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="{{ url_for('home') }}" class="nav__link active-link" aria-label="Home Tab">Home</a>
+          </li>
+        
+          <li class="nav__item">
+            <a href="{{ url_for('skills') }}" class="nav__link" aria-label="Skills Tab">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a href="{{ url_for('projects') }}" class="nav__link" aria-label="Projects Tab">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="{{ url_for('contact') }}" class="nav__link" aria-label="Contact Tab">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
